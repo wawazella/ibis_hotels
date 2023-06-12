@@ -1,0 +1,40 @@
+
+/* open nav */
+.bg-nav {
+    background: #B6C29C;
+}
+
+.nav-item .nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+
+.nav-item .nav-link:hover {
+    font-size: 14px;
+    font-weight: 700;
+    color: #bd9820;;
+}
+
+.nav-link-custom {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'noto serif', sans-serif 
+}
+
+/* close nav */
+
+
+/* close nav */
+.card-custom-home {
+    width: 440px;
+    height: 446px;
+    padding: 15px;
+    margin: 10px auto;
+}
+
+.img-card-home {
+    width: 300px;
+    height: 260px;
+}
+/* close nav */

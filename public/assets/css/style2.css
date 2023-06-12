@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Source+Sans+Pro&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;}
+
+
+.p-cs-servis{
+    text-align: justify;
+    font-weight: normal;
+
+
+}
+
+.container  text-center mt-5 {
+    padding: 10px 10px 10px 10px;
+}
+
+
+.nav-item {
+    text-align: center;
+}
+
+
+
+.text-center text-lg-start bg-light text-muted mt-4 {
+    background: fixed;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.button d-grid gap-2 d-md-block {
+    text-align: center;
+    left:50%;
+}
+
+.keterangan {
+    text-align: center;
+
+}
+
+
+.d-grid  {
+    text-align: right;
+    
+}
+
+
+.harga {
+    text-align: right;
+}
+
+
+.content {
+    width: 68.95px;
+    height: 57.18px;
+    left: 898px;
+    top: 925px;  
+
+}
+
+/*open img card content */
+.img-card-servis {
+    width: 250px;
+    height: 150px;
+}
+/* close img card content */
+
+
+
+
+/* style category */
+.bg-room-category {
+    
+    border-radius: 50px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-togler {
+    background: #b49c4a;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* open nav */
+.bg-nav {
+    background: #b49c4a;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-item .nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0f0101;
+    
+}
+
+.nav-item .nav-link:hover {
+    font-size: 14px;
+    font-weight: 700;
+    color: #e8ebe0;;
+}
+
+.text-uppercase fw-bold mb-4 mt-5 md-4 {
+    text-align: right;
+}
+
+.nav-link-custom {
+    font-size: 150%;
+    font-weight: bold;
+    font-family: 'noto serif', noto-serif 
+    
+    
+}
+
+/* close nav */
+
+
+/* open nav */
+.card-custom-home {
+    width: 440px;
+    height: 446px;
+    padding: 15px;
+    margin: 10px auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*open img card content */
+.img-card-home {
+    width: 300px;
+    height: 260px;
+    
+}
+/* close img card content */
+
+.d-grid  .btn  {
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
