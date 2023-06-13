@@ -16,7 +16,7 @@
                 </div>
                 {{-- open untuk menyambungkan pada route pada create tabel --}}
                 <div class="pull-right">
-                    <a class="btn btn-primary" href="{{ route('datakamar.index') }}"> Back</a>
+                    <a class="btn btn-secondary" href="{{ route('datakamar.index') }}"> Back</a>
                 </div>
                  {{-- close untuk menyambungkan pada route pada create tabel --}}
             </div>
@@ -63,7 +63,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                    <div class="form-group">
                        <strong> harga:</strong>
-                       <input type="text number" name="harga" class="form-control" placeholder=" harga">
+                       <input type="number" name="harga" class="form-control" placeholder=" harga">
                        @error('harga')
                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                        @enderror
@@ -72,7 +72,7 @@
             </div>
                 {{-- close masukan nama-nama pada tebel --}}
                
-                <button type="submit" class="btn btn-primary ml-3">Submit</button>
+                <button type="submit" class="btn btn-secondary ml-3">Submit</button>
             </div>
         </form>
     </div>

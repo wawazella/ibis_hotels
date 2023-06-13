@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-   @include('layouts.head')
+@include('layouts.head')
+    
 </head>
 
 <body id="page-top">
@@ -10,9 +11,10 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        <!-- Sidebar -->
-        @include('layouts.side')
-        <!-- End of Sidebar -->
+    @include('layouts.side')
+
+
+        
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -22,12 +24,13 @@
 
                 <!-- Topbar -->
                 @include('layouts.navbar')
+                
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                   @yield('content')
+                    @yield('content')
 
                 </div>
                 <!-- /.container-fluid -->
@@ -37,6 +40,7 @@
 
             <!-- Footer -->
             @include('layouts.footer')
+            
             <!-- End of Footer -->
 
         </div>
@@ -70,8 +74,8 @@
         </div>
     </div>
 
-    <!-- Bootstrap core JavaScript-->
     @include('layouts.script')
+
 </body>
 
 </html>

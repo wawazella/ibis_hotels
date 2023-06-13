@@ -25,7 +25,7 @@ class datakamarController extends Controller
     */
     public function create()
     {
-        return view('buat-datakamar');
+        return view('kamar.create');
     }
 
     /**

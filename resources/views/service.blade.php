@@ -46,7 +46,6 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h5 class="text-start">Room Family</h5>
               <img src="{{ asset('public/gambar_kamar/' . $datakamar->gambar_kamar)}}" alt="">
             </div>
         </div>
@@ -55,7 +54,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-end text-bold">
-                <p> {{$datakamar->harga}}</p>
+                <p> RP.{{$datakamar->harga}}/Night</p>
             </div>
         </div>
     </div><br><br><br>
@@ -102,12 +101,8 @@
                             <p href="#!" class="text-reset">Home</p>
                         </p>
                         <p>
-                            <p href="#!" class="text-reset">Category</p>
+                            <p href="#!" class="text-reset">List Kamar</p>
                         </p>
-                        <p>
-                            <p href="#!" class="text-reset">Servis</p>
-                        </p>
-                       
                     </div>
 
                 

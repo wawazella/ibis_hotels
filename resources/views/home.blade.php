@@ -122,12 +122,8 @@
                             <p href="#!" class="text-reset">Home</p>
                         </p>
                         <p>
-                            <p href="#!" class="text-reset">Category</p>
+                            <p href="#!" class="text-reset">List kamar</p>
                         </p>
-                        <p>
-                            <p href="#!" class="text-reset">Servis</p>
-                        </p>
-                       
                     </div>
 
                 

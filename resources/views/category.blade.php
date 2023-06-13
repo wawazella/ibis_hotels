@@ -118,12 +118,8 @@
                             <P href="#!" class="text-reset">Home</P>
                         </p>
                         <p>
-                            <P href="#!" class="text-reset">Category</P>
+                            <P href="#!" class="text-reset">List kamar</P>
                         </p>
-                        <p>
-                            <P href="#!" class="text-reset">Servis</P>
-                        </p>
-                       
                     </div>
 
                 
