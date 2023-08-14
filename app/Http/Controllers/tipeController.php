@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Tipe;
 use Illuminate\Http\Request;
 use App\Models\datakamar;
@@ -133,6 +134,8 @@ class tipeController extends Controller
     public function detailKamar($id)
     {
         $datakamar = datakamar::where('id',$id)->first();
-        return view('service', compact('datakamar'));
+        $harga_diskon = $datakamar->harga * $datakamar->diskon / 100;
+        $hasil_harga = $datakamar->harga - $harga_diskon; 
+        return view('service', compact('datakamar' , 'hasil_harga'));
     }
 }

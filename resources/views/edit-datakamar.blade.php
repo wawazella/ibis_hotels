@@ -71,6 +71,17 @@
                         @enderror
                     </div>
                 </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>  diskon:</strong>
+                        <input type="number" name="diskon" value="{{ $datakamar->diskon }}" class="form-control"
+                        placeholder=" diskon">
+                        @error('diskon')
+                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                        @enderror
+                    </div>
+                </div>
               
                 <button type="submit" class="btn btn-secondary ml-3">Submit</button>
             </div>

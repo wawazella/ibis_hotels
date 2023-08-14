@@ -10,5 +10,5 @@ class datakamar extends Model
     use HasFactory;
     
     protected $table = 'datakamar';
-    protected $fillable = [ 'nama_kamar', 'gambar_kamar', 'Deskripsi_kamar', 'harga'];
+    protected $fillable = [ 'nama_kamar', 'gambar_kamar', 'Deskripsi_kamar', 'harga', 'diskon'];
 }

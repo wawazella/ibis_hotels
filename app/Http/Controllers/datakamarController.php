@@ -36,26 +36,23 @@ class datakamarController extends Controller
     */
     public function store(Request $request)
     {
+        $diskon = 0;
+        if($request->diskon != 0 && $request->diskon != "") {
+            $diskon = $request->diskon;
+        } else {
+            $diskon = 0;
+        }
 
         $data= new datakamar();
-        
-
-        if($request->validate){ 
-        }
         $file= $request->file('gambar_kamar');
         $filename= date('YmdHi').$file->getClientOriginalName();
-        $file-> move(public_path('public/gambar_kamar'), $filename);
+        $file->move(public_path('public/gambar_kamar'), $filename);
         $data['nama_kamar']= $request->nama_kamar;
         $data['gambar_kamar']= $filename;
         $data['Deskripsi_kamar']= $request->Deskripsi_kamar;
         $data['harga']= $request->harga;
-       
-     
-       
-        
+        $data['diskon'] = $diskon;
         $data->save();
-
-
         return redirect()->route('datakamar.index')->with('success','datakamar has been created successfully.');
     }
 

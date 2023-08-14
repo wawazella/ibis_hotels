@@ -15,7 +15,6 @@
 
     <nav class="navbar navbar-expand-lg bg-nav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,26 +45,52 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-              <img src="{{ asset('public/gambar_kamar/' . $datakamar->gambar_kamar)}}" alt="">
+              <img src="{{ asset('public/gambar_kamar/' . $datakamar->gambar_kamar)}}" alt="" width="100%">
             </div>
         </div>
     </div><br><br>
 
-    <div class="container">
+    <div class="container"><br><br>
         <div class="row">
             <div class="col-12 text-end text-bold">
-                <p> RP.{{$datakamar->harga}}/Night</p>
+                @if($datakamar->diskon != null)
+                <p><del>RP.{{number_format($datakamar->harga)}}</del> ({{$datakamar->diskon}} %) / Night <br>RP. {{number_format($hasil_harga)}}/Night<br> </p>
+                @else
+                <p> RP.{{$datakamar->harga}} / Night</p>
+                @endif
             </div>
         </div>
     </div><br><br><br>
 
+
+ {{-- <div class="container"> 
+</div>  
+
+<div class="container wight-left mb-5">
+    <div style="width: 500px; margin: 0px auto">
+        <div class="justify-content-between d-md-flex">
+            <div> 
+                <p>Bathroom <br>-Designer toiletries <br> -Eco-friendly toiletries <br> -Hairdryer <br> -Private bathroom <br> -Shower <br> -Towels</p>
+        </div>
+        <div> 
+            <p class="text-left">Bedroom <br>-Alarm clock<br>-Bed sheets<br>-Blackout curtains<br>-Climate-controlled air conditioning<br>-Free cots/infant beds<br>-Rollaway/extra beds (surcharge)</p>
+        </div>
+        <div> 
+            <p class="text-left">fasilitas <br>-wifi<br>-Ac<br>-Climate-controlled air conditioning<br>-Free cots/infant beds<br>-Rollaway/extra beds (surcharge)</p>
+        </div>
+    </div>
+    </div>
+ </div> --}}
     
-   
 
   
-  <div>
-  <h5 class="text-center">Deskripsi Kamar</h5><br>
-  <p>{{$datakamar->Deskripsi_kamar}}</p><br><br><br><br><br> 
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10 text-center">
+            <h5 class="text-center">Deskripsi Kamar</h5><br>
+            <p>{{$datakamar->Deskripsi_kamar}}</p><br><br><br><br><br> 
+        </div>
+    </div>
   </div>
               
   <hr style="border:35px solid #77750c";><br><br>
@@ -98,7 +123,7 @@
                             INFORMATION
                         </p>
                         <p>
-                            <p href="#!" class="text-reset">Home</p>
+                            <p href="#!" class="text-reset " >Home</p>
                         </p>
                         <p>
                             <p href="#!" class="text-reset">List Kamar</p>

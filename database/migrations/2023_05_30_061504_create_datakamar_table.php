@@ -18,7 +18,7 @@ class CreatedatakamarTable extends Migration
             $table->id();
             $table->string('nama_kamar');
             $table->string('gambar_kamar');
-            $table->string('Deskripsi_kamar');
+            $table->text('Deskripsi_kamar');
             $table->string('harga');
             $table->timestamps();
         });

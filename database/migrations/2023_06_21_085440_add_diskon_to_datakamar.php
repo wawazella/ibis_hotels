@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTipeTable extends Migration
+class AddDiskonToDatakamar extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateTipeTable extends Migration
      */
     public function up()
     {
-        Schema::create('tipe', function (Blueprint $table) {
-            $table->id();
-            $table->string('kd_tipe');
-            $table->string('tipe_kamar');
-            $table->timestamps();
+        Schema::table('datakamar', function (Blueprint $table) {
+            $table->integer('diskon')->nullable();
         });
     }
 
@@ -28,6 +25,8 @@ class CreateTipeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tipe');
+        Schema::table('datakamar', function (Blueprint $table) {
+            $table->dropColumn('diskon');
+        });
     }
 }

@@ -3,7 +3,7 @@
 @section('content')
     <div class="card shadow mb-4">
         <div class="card-header py-3 d-md-flex justify-content-between align-items-center">
-            <h4 class="m-0 font-weight-bold text-warning">Edit datakamar</h4>
+            <h4 class="m-0 font-weight-bold text-secondary">Edit datakamar</h4>
         </div>
         <div class="card-body">
             <div class="row">

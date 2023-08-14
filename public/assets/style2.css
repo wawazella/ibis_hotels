@@ -1,19 +1,19 @@
 
 /* open nav */
 .bg-nav {
-    background: #B6C29C;
+    background: #100741;
 }
 
 .nav-item .nav-link {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     color: #000;
 }
 
 .nav-item .nav-link:hover {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
-    color: #bd9820;;
+    color: #152085;;
 }
 
 .nav-link-custom {

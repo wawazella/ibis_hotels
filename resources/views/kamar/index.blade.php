@@ -33,6 +33,7 @@
                             <th>gambar_kamar</th>
                             <th>Deskripsi_kamar</th>
                             <th>harga</th>
+                            <th>Diskon</th>
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
@@ -41,17 +42,18 @@
                             <tr>
                                 <td>{{ @$item->nama_kamar }}</td>
                                 <td><img width="100" src="{{ asset('public/gambar_kamar/' . @$item->gambar_kamar) }}" alt=""></td>
-                                <td>{{ Str::limit(@$item->Deskripsi_kamar, 20) }}</td>
-                                <td>{{ @$item->harga }}</td>
+                                <td>{{ Str::limit(@$item->Deskripsi_kamar, 50) }}</td>
+                                <td>Rp. {{ number_format(@$item->harga) }}</td>
+                                <td>{{ @$item->diskon }} %</td>
                                    <td class="text-center">
                                     <div class="d-flex justify-content-center">
-                                        <a class="m-2" class="text-primary" href="{{ route('datakamar.edit' , @$item->id) }}">
+                                        <a class="m-2" class="text-secondary" href="{{ route('datakamar.edit' , @$item->id) }}">
                                             <i class="fa fa-edit"></i>Edit
                                         </a>
                                         <form action="{{ route('datakamar.destroy',$item->id) }}" method="Post">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn text-danger"><i class="fa fa-trash"></i>
+                                            <button type="submit" class="btn text-secondary"><i class="fa fa-trash"></i>
                                             Hapus
                                             </button>
                                         </form>

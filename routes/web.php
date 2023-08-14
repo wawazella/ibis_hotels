@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\tipeController;
 
 /*
@@ -20,17 +21,16 @@ Route::get('/dashboard', function () {
 Route::get('/', function () {
     return view('Home');
 });
-
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+Route::get('/logout', [AuthController::class, 'logout'])->name('admin.logout');
+Route::get('/login', [AuthController::class, 'loginForm'])->name('admin.login');
+Route::post('/login/store', [AuthController::class, 'login'])->name('admin.login.store');
 
 Route::get('/service/{id}', [tipeController::class, 'detailKamar']);
 Route::get('/category', [tipeController::class, 'kamar']);
 Route::resource('datakamar', datakamarController::class);
 Route::resource('fasilitas', fasilitasController::class);
 Route::resource('categorykamar', categorykamarController::class);
-Route::resource('tipe', tipeController::class);
  
 Route::get('/home', function () {
     return view('home');

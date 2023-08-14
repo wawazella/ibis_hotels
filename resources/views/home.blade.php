@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
+    
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <link rel="stylesheet" href="{{asset('assets/css/style2.css')}}">
 
@@ -18,7 +18,6 @@
     <!--open navbar -->
     <nav class="navbar navbar-expand-lg bg-nav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,7 +52,7 @@
                 <div class="mb-2 text-center">
                     <img src="{{ asset('assets/img/bg-home.png') }}" class="img-fluid" alt="">
                 </div>
-                <h6 class="fw-bold" style="font-display: 'Times New Roman', Times, serif;">Jl. Golf Estate Bogor Raya, Sukaraja, Kec. Sukaraja, Kabupaten Bogor, Jawa Barat 16710 <br> Alamat</h6><br><br>
+               
             </div>
         </div>
     </section><br><br><br><br><br><br>
@@ -82,7 +81,7 @@
             </div>
         </div>
     </div><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <hr style="border:35px solid #cbe909; ";>
+    <hr style="border:35px solid #696863; ";>
 
     {{-- close card image --}}
 
@@ -154,17 +153,20 @@
                         </div>
                         
                     </div>
+                    <div class="text-center p-4" style="background-color: rgba(156, 147, 12, 0.05);">
+                        <h6 class="fw-bold mb-0" style="font-display: 'Times New Roman', Times, serif;">Jl. Golf Estate Bogor Raya, Sukaraja, Kec. Sukaraja, Kabupaten Bogor, Jawa Barat 16710 </h6>
+                    </div>
                     <!-- Grid column -->
                 </div>
+                
                 <!-- Grid row -->
             </div>
+            
         </section>
         <!-- Section: Links  -->
-
+       
         <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(156, 147, 12, 0.05);">
-         
-        </div>
+       
         <!-- Copyright -->
     </footer>
     <!-- Footer -->

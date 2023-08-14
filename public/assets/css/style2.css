@@ -78,12 +78,12 @@
 }
 
 .nav-togler {
-    background: #b49c4a;
+    background: #696863;
     font-family: 'Times New Roman', Times, serif;
 }
 /* open nav */
 .bg-nav {
-    background: #b49c4a;
+    background:#696863;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -97,7 +97,7 @@
 .nav-item .nav-link:hover {
     font-size: 14px;
     font-weight: 700;
-    color: #e8ebe0;;
+    color: #e8ebe0;
 }
 
 .text-uppercase fw-bold mb-4 mt-5 md-4 {

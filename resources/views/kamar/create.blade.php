@@ -3,7 +3,7 @@
 @section('content')
     <div class="card shadow mb-4">
         <div class="card-header py-3 d-md-flex justify-content-between align-items-center">
-            <h4 class="m-0 font-weight-bold text-warning">Buat datakamar</h4>
+            <h4 class="m-0 font-weight-bold text-secondary">Buat datakamar</h4>
         </div>
         <div class="container mt-4">
             <div class="row">
@@ -12,7 +12,7 @@
                     <div class="alert alert-danger">
                         {!! \Session::get('error') !!}
                     </div>
-                    @endif
+                    @endiff
                 </div>
             </div>
         </div>

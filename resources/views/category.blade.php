@@ -31,7 +31,7 @@
        <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-nav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -70,11 +70,11 @@
                 <h6 style="font-display: 'Times New Roman', Times, serif;">{{ $item->nama_kamar }}</h6>
                 </div>
                 <div class="mb-1">
-                    <img src="{{ url('public/gambar_kamar/'.$item->gambar_kamar)}}" class="img-fluid " alt="">
+                    <img src="{{ url('public/gambar_kamar/'.$item->gambar_kamar)}}" class="img-fluid " alt="" width="100%">
                 </div>
                     <div class="modal-footer" href="Servis" >
                     <a href="{{url('service/'.$item->id)}}">
-                        <button type="button" style="background-color: #b49c4a;" class="btn btn-primary mt-5">Room details</button>
+                        <button type="button" style="background-color: #696863;" class="btn btn-primary mt-5">Room details</button>
                     </a>
                     </div>
                 </div>
